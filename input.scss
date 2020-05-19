@@ -1,0 +1,83 @@
+// variables
+
+// SCSS SYNTAX
+// $font-stack:    Helvetica, sans-serif;
+// $primary-color: #333;
+
+// body {
+//   font: 100% $font-stack;
+//   color: $primary-color;
+// }
+
+// nesting
+
+// SCSS SYNTAX
+// nav {
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//   }
+
+//   li { display: inline-block; }
+
+//   a {
+//     display: block;
+//     padding: 6px 12px;
+//     text-decoration: none;
+//   }
+// }
+
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+    a {
+        display:block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #555;
+            color: white;
+        }
+    }
+
+    a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
