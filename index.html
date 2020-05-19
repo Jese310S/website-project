@@ -4,16 +4,43 @@
 <title>Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <!-- navbar -->
-<nav class="sidebar  navbar">
+    <!-- side navbar -->
+<!-- <nav class="sidebar  navbar">
     <a class="active" href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
     <a href="#projects">Projects</a>
     <a href="#projects">Blog</a>
+</nav> -->
+
+<!-- responsive navbar -->
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo">JS</a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="home" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="about" class="nav-links">About</a>
+        </li>
+        <li>
+            <a href="projects" class="nav-links">Projects</a>
+        </li>
+        <li>
+            <a href="blog" class="nav-links">Blog</a>
+        </li>
+        <li>
+            <a href="contact" class="nav-links">Contact</a>
+        </li>
+    </ul>
 </nav>
 
     <!-- intro to page -->
@@ -50,6 +77,16 @@
     <footer class="footer">
         social media and contact
     </footer>
+
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+    
+        mainNav.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

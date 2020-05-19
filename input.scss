@@ -82,6 +82,9 @@
 //     }
 //   }
 
+$breakpoint-tablet: 768px;
+
+
 body, header, section, footer {
     margin: 0;
     padding: 20px;
@@ -144,7 +147,100 @@ body {
     }
 }
 
+//navbar
+.main-nav {
+    list-style-type: none;
+}
 
+.nav-links{
+    text-decoration: none;
+}
+
+.main-nav {
+    li{
+        text-align: center;
+        margin: 15px auto;
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(2, 2, 2, 0.8);
+    font-size: 24px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+  // makes nav hide by default
+  .main-nav{
+    list-style-type: none;
+    display: none;
+}
+
+//toggles active class on menu
+.active {
+    display: block;
+  }
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: $breakpoint-tablet) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav {
+        li {
+            margin: 0;
+        }
+    }
+    .nav-links {
+        margin-left: 40px;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+
+    }
+
+
+
+
+
+// @media (max-width: $breakpoint-tablet) {
+//     .main-nav{
+//         list-style-type: none;
+//         display: none;
+//     }
+// }
 
 
 
