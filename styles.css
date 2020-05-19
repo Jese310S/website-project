@@ -38,11 +38,8 @@ body {
   border: 1px solid #000000;
   background: #616161; }
 
-.intro {
-  background: url("images/hike.jpg") no-repeat;
-  background-size: 100%; }
-  .intro p {
-    text-align: center; }
+.intro p {
+  text-align: center; }
 
 .main-nav {
   list-style-type: none; }
