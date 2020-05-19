@@ -87,7 +87,6 @@ $breakpoint-tablet: 768px;
 
 body, header, section, footer {
     margin: 0;
-    padding: 20px;
     border: 1px solid #000000;
     color: #ffffff;
     font-family: "Raleway", sans-serif;
@@ -102,14 +101,9 @@ body {
     background: #F0F0F0;
 }
 
-.navbar {
-    background: #03a9f4;
-}
-
-.intro {
-    background: #d22b1f;
-    height: 200px;
-}
+// .navbar {
+//     color: white;
+// }
 
 .about {
     background: #129a22;
@@ -138,12 +132,17 @@ body {
 }
 
 //intro css
-.intro {  
-    // background: url('') no-repeat;
-    // background-size: 100%;
+.intro-container {  
+    background: url('images/hike_small.jpg') no-repeat;
+    background-size: 100%;
+    margin: 0;
+    height: 1080px;
 
     p{
         text-align: center;
+        font-weight: 200;
+        font-size: 100px;
+        font-style: italic;
     }
 }
 
@@ -153,7 +152,7 @@ body {
 }
 
 .nav-links{
-    text-decoration: none;
+    color:white;
 }
 
 .main-nav {
@@ -209,6 +208,7 @@ body {
         flex-direction: row;
         justify-content: flex-end;
     }
+
     .main-nav {
         li {
             margin: 0;
@@ -218,7 +218,7 @@ body {
         margin-left: 40px;
 
         &:hover {
-            color: rgba(255, 255, 255, 1);
+            color: rgb(10, 9, 9);
         }
 
     }
@@ -291,3 +291,14 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
   }  
+
+  // footer
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
