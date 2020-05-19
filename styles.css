@@ -1,42 +1,39 @@
-.sidebar {
+body, header, section, footer {
   margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto; }
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none; }
-    .sidebar a:hover {
-      background-color: #555;
-      color: white; }
-  .sidebar a.active {
-    background-color: #4CAF50;
-    color: white; }
+  padding: 20px;
+  border: 1px solid #000000;
+  color: #ffffff; }
+  body section, header section, section section, footer section {
+    margin-top: 20px; }
 
-.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px; }
+body {
+  background: #F0F0F0; }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative; }
+.navbar {
+  background: #03a9f4; }
 
-  .sidebar a {
-    float: left; }
+.intro {
+  background: #d22b1f; }
 
-  div.content {
-    margin-left: 0; } }
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none; } }
+.about {
+  background: #129a22; }
+
+.projects {
+  border: 1px solid #000000;
+  background: #673ab7; }
+
+.skills {
+  border: 1px solid #000000;
+  background: #e7e2e7;
+  color: black; }
+
+.contact {
+  border: 1px solid #000000;
+  background: #b73aa6;
+  margin-bottom: 20px; }
+
+.footer {
+  border: 1px solid #000000;
+  background: #616161; }
 
 /*# sourceMappingURL=styles.css.map */
