@@ -87,6 +87,7 @@ body, header, section, footer {
     padding: 20px;
     border: 1px solid #000000;
     color: #ffffff;
+    font-family: "Raleway", sans-serif;
 
     section {
         margin-top: 20px;
@@ -104,6 +105,7 @@ body {
 
 .intro {
     background: #d22b1f;
+    height: 200px;
 }
 
 .about {
@@ -131,3 +133,29 @@ body {
     border: 1px solid #000000;
     background: #616161;
 }
+
+//intro css
+.intro {  
+    background: url('images/hike.jpg') no-repeat;
+    background-size: 100%;
+
+    p{
+        text-align: center;
+    }
+}
+
+
+
+
+
+// flex css for projects
+
+
+.projects {
+        display: flex;
+    }
+
+
+.project-gallery {
+    display: flex;
+  }

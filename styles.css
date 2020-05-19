@@ -2,7 +2,8 @@ body, header, section, footer {
   margin: 0;
   padding: 20px;
   border: 1px solid #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: "Raleway", sans-serif; }
   body section, header section, section section, footer section {
     margin-top: 20px; }
 
@@ -13,7 +14,8 @@ body {
   background: #03a9f4; }
 
 .intro {
-  background: #d22b1f; }
+  background: #d22b1f;
+  height: 200px; }
 
 .about {
   background: #129a22; }
@@ -35,5 +37,17 @@ body {
 .footer {
   border: 1px solid #000000;
   background: #616161; }
+
+.intro {
+  background: url("images/hike.jpg") no-repeat;
+  background-size: 100%; }
+  .intro p {
+    text-align: center; }
+
+.projects {
+  display: flex; }
+
+.project-gallery {
+  display: flex; }
 
 /*# sourceMappingURL=styles.css.map */
