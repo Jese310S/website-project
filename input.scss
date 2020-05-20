@@ -87,12 +87,12 @@ $breakpoint-tablet: 768px;
 
 body, header, section, footer {
     margin: 0;
-    border: 1px solid #000000;
     color: #ffffff;
     font-family: "Raleway", sans-serif;
 
     section {
         margin-top: 20px;
+
     }
 }
 
@@ -101,24 +101,8 @@ body {
     background: #F0F0F0;
 }
 
-// .navbar {
-//     color: white;
-// }
 
-.about {
-    background: #129a22;
-}
 
-.projects {
-    border: 1px solid #000000;
-    background: #673ab7;
-}
-
-.skills {
-    border: 1px solid #000000;
-    background: #e7e2e7;
-    color: black;
-}
 
 .contact {
     border: 1px solid #000000;
@@ -242,7 +226,12 @@ body {
 //     }
 // }
 
-//skills-icons
+//about section CSS
+.about {
+    text-align: center;
+    color: black;
+    padding: 65px;
+}
 
 
 // flex css for projects
@@ -250,13 +239,31 @@ body {
 
 .projects {
         display: flex;
+        background-color: #F0F0F0;
     }
 
 
 .project-gallery {
-    display: flex;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        img {
+            padding: 20px;
+            margin: 10px;
+        }
   }
 
+
+
+  // Skills CSS
+
+  .skills {
+      img {
+        max-height: 100px;
+        max-width: 100px;
+      } 
+  }
 //contact form CSS
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
