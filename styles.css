@@ -91,6 +91,10 @@ body {
 
   .navbar-toggle {
     display: none; } }
+@media screen and (max-width: 1450px) {
+  .intro-container {
+    font-size: 2em;
+    height: 900px; } }
 .title {
   color: #000000;
   font-size: 2em; }

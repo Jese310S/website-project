@@ -83,6 +83,7 @@
 //   }
 
 $breakpoint-tablet: 768px;
+$breakpoint-laptop: 1450px;
 
 
 body, header, section, footer {
@@ -219,7 +220,12 @@ body {
 
     }
 
-
+@media screen and (max-width: $breakpoint-laptop) {
+    .intro-container {
+        font-size: 2em;
+        height: 900px;
+    }
+}
 
 
 
