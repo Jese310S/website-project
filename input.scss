@@ -154,13 +154,13 @@ body {
     margin-left: 20px;
 }
 
-.intro-container {
-    h1 {
-        text-align: center;
-        padding: 70px;
-        font-size: 3em;
-    }
-}
+// .intro-container {
+//     h1 {
+//         text-align: center;
+//         padding: 70px;
+//         font-size: 3em;
+//     }
+// }
 
 .navbar {
     h1 {
@@ -188,8 +188,15 @@ body {
   $bp-iphone-max: 480px;
   $bp-iphone-min: 320px;
 
-// devices 768px to 1024 (ipads)
-@media screen and (min-width: $bp-ipad-min) and ( max-width: $bp-ipad-max) {
+// desktop
+@media screen and (min-width: $bp-large-screen) {
+        .intro-container {
+            h1 {
+                text-align: center;
+                padding: 70px;
+                font-size: 3em;
+            }
+        }
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -225,13 +232,26 @@ body {
         }
 
     }
+// handheld devices (ipad )
+@media screen and (min-width: $bp-ipad-min) and (max-width: $bp-ipad-max) {
+    .intro-container {
+        font-size: 1em;
+        padding: 0px;
+        margin: 0;
+        height: 400px;
+    }
+}
+
+//handheld iphone 
 
 @media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
     .intro-container {
         font-size: 1em;
+        padding: 0px;
+        margin: 0;
+        height: 200px;
     }
 }
-
 
 
 // section h1's with the class title

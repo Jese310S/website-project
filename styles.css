@@ -49,11 +49,6 @@ body {
   margin-top: 10px;
   margin-left: 20px; }
 
-.intro-container h1 {
-  text-align: center;
-  padding: 70px;
-  font-size: 3em; }
-
 .navbar h1 {
   color: white; }
 
@@ -64,7 +59,12 @@ body {
 .active {
   display: block; }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1824px) {
+  .intro-container h1 {
+    text-align: center;
+    padding: 70px;
+    font-size: 3em; }
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -91,9 +91,18 @@ body {
 
   .navbar-toggle {
     display: none; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro-container {
+    font-size: 1em;
+    padding: 0px;
+    margin: 0;
+    height: 400px; } }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .intro-container {
-    font-size: 1em; } }
+    font-size: 1em;
+    padding: 0px;
+    margin: 0;
+    height: 200px; } }
 .title {
   color: #000000;
   font-size: 2em; }
