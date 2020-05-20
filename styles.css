@@ -3,7 +3,7 @@ body, header, section, footer {
   color: #ffffff;
   font-family: "Raleway", sans-serif; }
   body section, header section, section section, footer section {
-    margin-top: 20px; }
+    border-top: 2px solid #DCDCDC; }
 
 body {
   background: #F0F0F0; }
@@ -22,11 +22,6 @@ body {
   background-size: 100%;
   margin: 0;
   height: 1080px; }
-  .intro-container p {
-    text-align: center;
-    font-weight: 200;
-    font-size: 100px;
-    font-style: italic; }
 
 .main-nav {
   list-style-type: none; }
@@ -53,6 +48,14 @@ body {
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px; }
+
+.intro-container h1 {
+  text-align: center;
+  padding: 70px;
+  font-size: 3em; }
+
+.navbar h1 {
+  color: white; }
 
 .main-nav {
   list-style-type: none;
@@ -88,13 +91,18 @@ body {
 
   .navbar-toggle {
     display: none; } }
+.title {
+  color: #000000;
+  font-size: 2em; }
+
 .about {
   text-align: center;
   color: black;
-  padding: 65px; }
+  padding: 100px;
+  background-color: #F0F8FF; }
 
 .projects {
-  display: flex;
+  text-align: center;
   background-color: #F0F0F0; }
 
 .project-gallery {
@@ -106,9 +114,13 @@ body {
     padding: 20px;
     margin: 10px; }
 
-.skills img {
-  max-height: 100px;
-  max-width: 100px; }
+.skills {
+  text-align: center;
+  background-color: #F0F8FF; }
+  .skills img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 20px; }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -148,12 +160,16 @@ input[type=submit]:hover {
   padding: 20px; }
 
 .footer {
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #1a1a1a;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 2em; }
+
+.fab {
+  padding: 25px; }
 
 /*# sourceMappingURL=styles.css.map */

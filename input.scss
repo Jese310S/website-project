@@ -89,11 +89,9 @@ body, header, section, footer {
     margin: 0;
     color: #ffffff;
     font-family: "Raleway", sans-serif;
-
-    section {
-        margin-top: 20px;
-
-    }
+        section {
+            border-top: 2px solid #DCDCDC;;
+        }
 }
 
 
@@ -121,13 +119,6 @@ body {
     background-size: 100%;
     margin: 0;
     height: 1080px;
-
-    p{
-        text-align: center;
-        font-weight: 200;
-        font-size: 100px;
-        font-style: italic;
-    }
 }
 
 //navbar
@@ -164,6 +155,19 @@ body {
     margin-left: 20px;
 }
 
+.intro-container {
+    h1 {
+        text-align: center;
+        padding: 70px;
+        font-size: 3em;
+    }
+}
+
+.navbar {
+    h1 {
+        color: white;
+    }
+}
 
 
   // makes nav hide by default
@@ -226,21 +230,29 @@ body {
 //     }
 // }
 
+
+// section h1's with the class title
+.title {
+    color:#000000;
+    font-size: 2em;
+}
+
 //about section CSS
 .about {
     text-align: center;
     color: black;
-    padding: 65px;
+    padding: 100px;
+    background-color: #F0F8FF;
 }
 
 
-// flex css for projects
+// css for projects
 
 
 .projects {
-        display: flex;
-        background-color: #F0F0F0;
-    }
+   text-align: center;
+    background-color: #F0F0F0;
+}
 
 
 .project-gallery {
@@ -259,9 +271,14 @@ body {
   // Skills CSS
 
   .skills {
+    text-align: center;
+    background-color: #F0F8FF;
+
+
       img {
         max-height: 100px;
         max-width: 100px;
+        margin: 20px;
       } 
   }
 //contact form CSS
@@ -301,11 +318,17 @@ input[type=submit]:hover {
 
   // footer
   .footer {
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
+    font-size: 2em;
+ }
+
+ .fab {
+     padding:25px;
+
  }
