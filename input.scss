@@ -82,8 +82,6 @@
 //     }
 //   }
 
-$breakpoint-tablet: 768px;
-$breakpoint-laptop: 1450px;
 
 
 body, header, section, footer {
@@ -182,59 +180,58 @@ body {
     display: block;
   }
 
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: $breakpoint-tablet) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
+  $bp-large-screen: 1824px;
+  $bp-bigscreen: 1824px;
+  $bp-ipad-max: 1024px;
+  $bp-ipad-min: 768px;
+  $bp-iphone5-max: 568px;
+  $bp-iphone-max: 480px;
+  $bp-iphone-min: 320px;
 
-    .main-nav {
-        li {
-            margin: 0;
+// devices 768px to 1024 (ipads)
+@media screen and (min-width: $bp-ipad-min) and ( max-width: $bp-ipad-max) {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0;
+            height: 70px;
+            align-items: center;
         }
-    }
-    .nav-links {
-        margin-left: 40px;
-
-        &:hover {
-            color: rgb(10, 9, 9);
+        .main-nav {
+            display: flex;
+            margin-right: 30px;
+            flex-direction: row;
+            justify-content: flex-end;
         }
 
-    }
-    .logo {
-        margin-top: 0;
-    }
-   .navbar-toggle {
-       display: none;
-    }
+        .main-nav {
+            li {
+                margin: 0;
+            }
+        }
+        .nav-links {
+            margin-left: 40px;
+
+            &:hover {
+                color: rgb(10, 9, 9);
+            }
+
+        }
+        .logo {
+            margin-top: 0;
+        }
+    .navbar-toggle {
+        display: none;
+        }
 
     }
 
-@media screen and (max-width: $breakpoint-laptop) {
+@media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
     .intro-container {
-        font-size: 2em;
-        height: 900px;
+        font-size: 1em;
     }
 }
 
-
-
-// @media (max-width: $breakpoint-tablet) {
-//     .main-nav{
-//         list-style-type: none;
-//         display: none;
-//     }
-// }
 
 
 // section h1's with the class title
