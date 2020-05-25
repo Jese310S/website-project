@@ -64,6 +64,8 @@ The footer contains the different way to get in contact with me.  The links are 
 ![](images/wireframe/project.jpg)
 
 
+##### Trello
+![](images/trello_1.jpg)
 
 
 
