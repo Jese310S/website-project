@@ -16,6 +16,20 @@
 
 - The website is designed with a mobile first layout design.  The website has been made responsive for multiple devices.
 
+## Target Audience
+
+##### The target audience for this website is:
+- Fellow peers
+- Possible Employers
+- Meetups and events
+
+## Tech Stack
+
+- The website was built using HTML, CSS, SASS, and Javascript.
+- Trello was used for project management ![Trello Board](https://trello.com/b/u8BghrQx/portfoliosite)
+- Miro was used to build wireframes for project
+
+
 
 ##### Navigation
 
@@ -67,22 +81,5 @@ The footer contains the different way to get in contact with me.  The links are 
 #### Trello
 ![](images/trello_1.png)
 
-
-
-
-
-
-## Target Audience
-
-##### The target audience for this website is:
-- Fellow peers
-- Possible Employers
-- Meetups and events
-
-## Tech Stack
-
-- The website was built using HTML, CSS, SASS, and Javascript.
-- Trello was used for project management ![Trello Board](https://trello.com/b/u8BghrQx/portfoliosite)
-- Miro was used to build wireframes for project
 
 
