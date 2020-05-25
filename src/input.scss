@@ -1,0 +1,735 @@
+//Index.html CSS 
+
+body, header, section, footer {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+        section {
+            border-top: 2px solid #DCDCDC;;
+        }
+}
+
+
+body {
+    background: #F0F0F0;
+}
+
+
+
+.footer {
+    border: 1px solid #000000;
+    background: #616161;
+}
+
+//intro css
+.intro-container {  
+    background: url('images/hike_small.jpg') no-repeat;
+    background-size: 100%;
+    margin: 0;
+    height: 1080px;
+}
+
+//navbar
+.main-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links{
+    color:white;
+}
+
+.main-nav {
+    li{
+        text-align: center;
+        margin: 15px auto;
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(2, 2, 2, 0.8);
+    font-size: 24px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.navbar {
+    h1 {
+        color: white;
+    }
+}
+
+
+  // makes nav hide by default
+  .main-nav{
+    list-style-type: none;
+    display: none;
+}
+
+//toggles active class on menu
+.active {
+    display: block;
+    padding: 0;
+  }
+
+
+  // Variables for screen sizes
+  $bp-desktop: 1024px;
+  $bp-bigscreen: 1824px;
+  $bp-ipad-max: 1024px;
+  $bp-ipad-min: 768px;
+  $bp-iphone5-max: 568px;
+  $bp-iphone-max: 480px;
+  $bp-iphone-min: 320px;
+
+// desktop
+@media screen and (min-width: $bp-desktop) {
+        .intro-container {
+            h1 {
+                text-align: center;
+                padding: 70px;
+                font-size: 3em;
+            }
+        }
+        //about section CSS
+        .about {
+            text-align: center;
+            color: #000000;
+            padding: 100px;
+            background-color: #F0F8FF;
+            font-size: 25px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0;
+            height: 70px;
+            align-items: center;
+        }
+        .main-nav {
+            display: flex;
+            margin-right: 30px;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .main-nav {
+            li {
+                margin: 0;
+            }
+        }
+        .nav-links {
+            margin-left: 40px;
+
+            &:hover {
+                color: rgb(10, 9, 9);
+            }
+
+        }
+        .logo {
+            margin-top: 0;
+        }
+    .navbar-toggle {
+        display: none;
+        }
+
+        .projects{
+            img {
+                padding: 20px;
+                margin: 10px;
+                width: 15%;
+            }
+        }
+
+    .desktop-hidden{
+        display: none;
+        }
+
+        .button {
+            box-shadow:inset 0px 1px 0px 0px #bee2f9;
+            background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+            background-color:#63b8ee;
+            border-radius:6px;
+            border:1px solid #3866a3;
+            display: block;
+            cursor:pointer;
+            color:#14396a;
+            font-family:Arial;
+            font-size:20px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #7cacde;
+            margin-bottom: 15px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+    
+            &:hover {
+                background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+                background-color:#468ccf;
+            }
+        }
+        .button:active {
+            position:relative;
+            top:1px;
+        }    
+
+    // .image-caption {
+    //     transform: translate(-821px, 143px);
+    //     border: 2px solid white;
+    //     width: fit-content;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     padding: 7px;
+    //     background: rgba(0,0,0,0.3);
+    //     color: white;
+    //     border-radius: 18px;
+    //     font-weight: 900;
+    //     height: max-content;
+    // }
+
+    }
+// handheld devices (ipad )
+@media screen and (min-width: $bp-ipad-min) and (max-width: $bp-ipad-max) {
+    .intro-container {
+        font-size: 1em;
+        padding: 0px;
+        margin: 0;
+        height: 515px;
+
+        h1 {
+            font-size: 2em;
+            padding: 74px;
+            text-align: center;
+        }
+    }
+
+    //about section CSS
+    .about {
+        text-align: center;
+        color: #000000;
+        padding: 100px;
+        background-color: #F0F8FF;
+    }
+
+    .desktop-hidden{
+        display: none;
+        }
+
+        .button {
+            box-shadow:inset 0px 1px 0px 0px #bee2f9;
+            background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+            background-color:#63b8ee;
+            border-radius:6px;
+            border:1px solid #3866a3;
+            display: block;
+            cursor:pointer;
+            color:#14396a;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #7cacde;
+            margin-bottom: 15px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+    
+            &:hover {
+                background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+                background-color:#468ccf;
+            }
+        }
+        .button:active {
+            position:relative;
+            top:1px;
+        } 
+
+        .projects{
+            img {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+}
+
+
+//handheld iphone 
+
+@media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
+    .active{
+        background: rgba(0,0,0,0.5);
+        padding: 0;
+    }
+
+    .about {
+        padding: 0;
+        color: #000000;
+        text-align: center;
+        padding-top: 20px;
+        border-top: none;
+
+            h2 {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 60px;
+                font-size: 20px;
+                padding-top: 20px;
+            }
+
+            p {
+                display: none;
+            }
+    }
+
+    .intro-container {
+        padding: 0px;
+        margin: 0;
+        height: 250px;
+
+        h1 {
+            font-size: 15px;
+            padding: 74px;
+            padding-top: 0px;
+            text-align: center;
+        }
+    }
+
+    .project-gallery {
+
+        .hidden {
+            display: none;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            height: 25%;
+            width: 60%;
+            padding: 0;
+            margin: 0;
+        }
+
+    }
+
+    .image-caption {
+        // transform: translate(0px, -200px);
+        border: 2px solid white;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px;
+        color: white;
+        border-radius: 18px;
+        font-weight: 900;
+    }
+
+    .button {
+        box-shadow:inset 0px 1px 0px 0px #bee2f9;
+        background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+        background-color:#63b8ee;
+        border-radius:6px;
+        border:1px solid #3866a3;
+        display:inline-block;
+        cursor:pointer;
+        color:#14396a;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #7cacde;
+        margin-bottom: 15px;
+
+        &:hover {
+            background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+            background-color:#468ccf;
+        }
+    }
+    .button:active {
+        position:relative;
+        top:1px;
+    }
+
+    .fab {
+        padding: 10px;
+
+    }
+}
+
+
+// section h1's with the class title
+.title {
+    color:#000000;
+    font-size: 2em;
+}
+
+
+// css for projects
+
+
+.projects {
+   text-align: center;
+    background-color: #F0F0F0;
+    padding-left: 24px;
+}
+
+
+// .project-gallery {
+//     padding: 20px;
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//         img {
+//             padding: 20px;
+//             margin: 10px;
+//         }
+//   }
+
+
+
+  // Skills CSS
+
+  .skills {
+    text-align: center;
+    background-color: #F0F8FF;
+
+
+      img {
+        max-height: 100px;
+        max-width: 100px;
+        margin: 20px;
+      } 
+  }
+
+
+
+  // footer
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+ }
+
+
+ // custom fontawesome CSS
+ .fab {
+     padding:25px;
+     font-size: 2em;
+
+ }
+
+ .fas  {
+     color: white;
+ }
+
+
+
+
+
+ // BLOG CSS -----------------------------------------------------------------
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    background: #f1f1f1;
+
+    p {
+        color: #000000;
+    }
+  }
+
+  .leftcolumn {   
+    width: 75%;
+  }
+
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .blog-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+//    Responsive layout 
+
+//   -----------------screen size variables --------------
+//   $bp-desktop: 1024px;
+//   $bp-bigscreen: 1824px;
+//   $bp-ipad-max: 1024px;
+//   $bp-ipad-min: 768px;
+//   $bp-iphone5-max: 568px;
+//   $bp-iphone-max: 480px;
+//   $bp-iphone-min: 320px;
+
+@media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+
+      /* placeholder image */
+  .blog-row {
+
+    img {
+      height: 200px;
+      padding-left: 25px;
+      }
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 106px;
+     }
+
+  }
+
+  @media screen and (min-width: $bp-ipad-min) and (max-width: $bp-ipad-max) {
+
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+
+      .card{
+          text-align: center;
+          font-size: 20px;
+      }
+
+
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    .leftcolumn {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        margin-bottom: 100px;
+        font-size: 25px;
+    }
+    .card {
+            width: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        
+    }
+
+  }
+
+
+
+  // gallery CSS --------------------------------------------------------------------
+
+
+
+.gallery-title {
+    color: #000000;
+    text-align: center;
+    padding-top: 50px;
+}
+
+  div{
+
+    .gallery {
+        border: 1px solid #ccc;
+    }
+}
+  div{
+    .gallery:hover {
+        border: 1px solid #777;
+    }
+}
+  .gallery{
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+  div {
+    .desc {
+        padding: 15px;
+        text-align: center;
+        color: #000000;
+    }
+}
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+
+
+//    Responsive layout 
+
+//   -----------------screen size variables --------------
+//   $bp-desktop: 1024px;
+//   $bp-bigscreen: 1824px;
+//   $bp-ipad-max: 1024px;
+//   $bp-ipad-min: 768px;
+//   $bp-iphone5-max: 568px;
+//   $bp-iphone-max: 480px;
+//   $bp-iphone-min: 320px;
+
+// IPAD styling
+@media screen and (min-width: $bp-ipad-min) and (max-width: $bp-ipad-max) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+
+    .intro-container {
+        height: 300px;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      div {
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #000000;
+            font-size: 2em;
+        }
+    }
+
+    .gallery-title{
+        font-size: 2em;
+    }
+    
+  }
+  
+  // Iphone styling
+  @media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
+    .responsive {
+      width: 100%;
+    }
+  
+
+  .intro-container {
+      height: 115px;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+// DESKTOP CSS
+
+@media screen and (min-width: $bp-desktop) {
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .intro-container{
+      height: 1300px;
+  }
+
+  .nav-links{
+      font-size: 2em;
+  }
+
+  .gallery-title{
+      font-size: 3em;
+  }
+
+  .gallery-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+    width: 80%;
+  }
+
+  .gallery {
+      margin-bottom: 40px;
+  }
+}
+
+
+//ABOUT CSS ---------------------------------------------------------------------------------------
+
+
+@media screen and (min-width: $bp-desktop) {
+    .about-html {
+        margin-top: 44px;
+        text-align: center;
+        color: #000000;
+        padding: 100px;
+        background-color: #F0F8FF;
+        font-size: 28px;
+        width: 69%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 44px;
+        border-top: none;
+    }
+}
+
+@media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
+
+    .about-html {
+        color: #000000;
+        text-align: center;
+        padding-top: 78px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: $bp-ipad-min) and (max-width: $bp-ipad-max) {
+
+    .about-html {
+        color: #000000;
+        text-align: center;
+        padding-top: 78px;
+        padding-bottom: 40px;
+    }
+}
