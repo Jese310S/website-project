@@ -565,40 +565,35 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
+.gallery-title {
+    color: #000000;
     text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-    color: #b73aa6;
-  }
+}
+
+  div{
+
+    .gallery {
+        border: 1px solid #ccc;
+    }
+}
+  div{
+    .gallery:hover {
+        border: 1px solid #777;
+    }
+}
+  .gallery{
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+  div {
+    .desc {
+        padding: 15px;
+        text-align: center;
+        color: #000000;
+    }
+}
   
   .responsive {
     padding: 0 6px;
