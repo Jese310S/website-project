@@ -58,10 +58,10 @@ The footer contains the different way to get in contact with me.  The links are 
 ![](images/desktop2.png)
 
 ##### WireFrames
-![](wireframe/About_me.jpg)
-![](wireframe/blog_wireframe.jpg)
-![](wireframe/home.jpg)
-![](wireframe/project.jpg)
+![](images/wireframe/About_me.jpg)
+![](images/wireframe/blog_wireframe.jpg)
+![](images/wireframe/home.jpg)
+![](images/wireframe/project.jpg)
 
 
 
