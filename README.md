@@ -42,30 +42,30 @@ The footer contains the different way to get in contact with me.  The links are 
 
 ## Screenshots
 
-##### Mobile View
+#### Mobile View
 ![](images/mobile_view1.png)
 ![](images/mobile_view2.png)
 ![](images/mobile_view3.png)
 ![](images/mobile_view4.png)
 ![](images/mobile_view5.png)
 
-##### Tablet View
+#### Tablet View
 ![](images/tablet_view1.png)
 ![](images/tablet_view2.png)
 
-##### Desktop View
+#### Desktop View
 ![](images/desktop1.png)
 ![](images/desktop2.png)
 
-##### WireFrames
+#### WireFrames
 ![](images/wireframe/About_me.jpg)
 ![](images/wireframe/blog_wireframe.jpg)
 ![](images/wireframe/home.jpg)
 ![](images/wireframe/project.jpg)
 
 
-##### Trello
-![](images/trello_1.jpg)
+#### Trello
+![](images/trello_1.png)
 
 
 
