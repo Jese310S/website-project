@@ -710,3 +710,23 @@ body {
       margin-bottom: 40px;
   }
 }
+
+
+//ABOUT CSS ---------------------------------------------------------------------------------------
+
+
+@media screen and (min-width: $bp-desktop) {
+    .about {
+        margin-top: 44px;
+        text-align: center;
+        color: #000000;
+        padding: 100px;
+        background-color: #F0F8FF;
+        font-size: 28px;
+        width: 69%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 44px;
+        border-top: none;
+    }
+}
