@@ -668,11 +668,45 @@ body {
   .intro-container {
       height: 115px;
   }
-  
+
   .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
 
+}
+// DESKTOP CSS
+
+@media screen and (min-width: $bp-desktop) {
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .intro-container{
+      height: 200px;
+  }
+
+  .nav-links{
+      font-size: 20px;
+  }
+
+  .gallery-title{
+      font-size: 3em;
+  }
+
+  .gallery-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+    width: 80%;
+  }
+
+  .gallery {
+      margin-bottom: 40px;
+  }
 }
