@@ -43,19 +43,31 @@ The footer contains the different way to get in contact with me.  The links are 
 ## Screenshots
 
 ##### Mobile View
-![enter image description here](images/mobile_view1)
-![enter image description here](images/mobile_view2)
-![enter image description here](images/mobile_view3)
-![enter image description here](images/mobile_view4)
-![enter image description here](images/mobile_view5)
+![](images/mobile_view1)
+![](images/mobile_view2)
+![](images/mobile_view3)
+![](images/mobile_view4)
+![](images/mobile_view5)
 
 ##### Tablet View
-![enter image description here](images/tablet_view1)
-![enter image description here](images/tablet_view2)
+![](images/tablet_view1)
+![](images/tablet_view2)
 
 ##### Desktop View
-![enter image description here](images/desktop1)
-![enter image description here](images/desktop2)
+![](images/desktop1)
+![](images/desktop2)
+
+##### WireFrames
+![](wireframe/About_me.jpg)
+![](wireframe/blog_wireframe.jpg)
+![](wireframe/home.jpg)
+![](wireframe/project.jpg)
+
+
+
+
+
+
 
 
 ## Target Audience
@@ -69,4 +81,6 @@ The footer contains the different way to get in contact with me.  The links are 
 
 - The website was built using HTML, CSS, SASS, and Javascript.
 - Trello was used for project management ![Trello Board](https://trello.com/b/u8BghrQx/portfoliosite)
-- MockFlow was used to build wireframes for project
+- Miro was used to build wireframes for project
+
+
