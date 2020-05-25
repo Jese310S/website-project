@@ -1,7 +1,5 @@
 //Index.html CSS 
 
-
-
 body, header, section, footer {
     margin: 0;
     color: #ffffff;
@@ -17,13 +15,6 @@ body {
 }
 
 
-
-
-.contact {
-    border: 1px solid #000000;
-    background: #b73aa6;
-    margin-bottom: 20px;
-}
 
 .footer {
     border: 1px solid #000000;
@@ -72,13 +63,6 @@ body {
     margin-left: 20px;
 }
 
-// .intro-container {
-//     h1 {
-//         text-align: center;
-//         padding: 70px;
-//         font-size: 3em;
-//     }
-// }
 
 .navbar {
     h1 {
@@ -98,6 +82,8 @@ body {
     display: block;
   }
 
+
+  // Variables for screen sizes
   $bp-desktop: 1024px;
   $bp-bigscreen: 1824px;
   $bp-ipad-max: 1024px;
