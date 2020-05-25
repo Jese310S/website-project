@@ -255,8 +255,7 @@ body {
     top: 1px; }
 
   .fab {
-    padding: 10px;
-    font-size: 2em; } }
+    padding: 10px; } }
 .title {
   color: #000000;
   font-size: 2em; }
@@ -274,43 +273,6 @@ body {
     max-width: 100px;
     margin: 20px; }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical; }
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049; }
-
-/* Add a background color and some padding around the form */
-.contact {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px; }
-
 .footer {
   position: static;
   left: 0;
@@ -318,11 +280,11 @@ input[type=submit]:hover {
   width: 100%;
   background-color: #1a1a1a;
   color: white;
-  text-align: center;
-  font-size: 2em; }
+  text-align: center; }
 
 .fab {
-  padding: 25px; }
+  padding: 25px;
+  font-size: 2em; }
 
 .fas {
   color: white; }
@@ -332,18 +294,9 @@ input[type=submit]:hover {
 
 /* Add a gray background color with some padding */
 body {
-  font-family: Arial;
   background: #f1f1f1; }
   body p {
     color: #000000; }
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: #F0F0F0;
-  color: #000000; }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -357,11 +310,6 @@ body {
   width: 25%;
   padding-left: 20px; }
 
-/* placeholder image */
-.row img {
-  height: 200px;
-  padding-left: 25px; }
-
 /* Add a card effect for articles */
 .card {
   background-color: white;
@@ -369,13 +317,21 @@ body {
   margin-top: 20px; }
 
 /* Clear floats after the columns */
-.row:after {
+.blog-row:after {
   content: "";
   display: table;
   clear: both; }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0; }
+
+  /* placeholder image */
+  .blog-row img {
+    height: 200px;
+    padding-left: 25px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0; } }
