@@ -1,24 +1,7 @@
-body, header, section, footer {
-  margin: 0;
-  color: #ffffff;
-  font-family: "Raleway", sans-serif; }
-  body section, header section, section section, footer section {
-    border-top: 2px solid #DCDCDC; }
 
-body {
-  background: #F0F0F0; }
-
-.contact {
-  border: 1px solid #000000;
-  background: #b73aa6;
-  margin-bottom: 20px; }
-
-.footer {
-  border: 1px solid #000000;
-  background: #616161; }
 
 .intro-container {
-  background: url("images/hike_small.jpg") no-repeat;
+  background-color:	#696969 ;
   background-size: 100%;
   margin: 0;
   height: 1080px; }
@@ -59,6 +42,15 @@ body {
 .active {
   display: block; }
 
+  .fas {
+    color:white;
+  }
+
+    .navbar {
+      height: inherit;
+    }
+
+/* 
 @media screen and (min-width: 1024px) {
   .intro-container h1 {
     text-align: center;
@@ -441,7 +433,7 @@ div .desc {
   .gallery {
     margin-bottom: 40px; } }
 @media screen and (min-width: 1024px) {
-  .about-html {
+  .about {
     margin-top: 44px;
     text-align: center;
     color: #000000;
@@ -454,4 +446,4 @@ div .desc {
     margin-bottom: 44px;
     border-top: none; } }
 
-/*# sourceMappingURL=styles.css.map */
+# sourceMappingURL=styles.css.map */

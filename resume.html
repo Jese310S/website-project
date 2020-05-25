@@ -24,7 +24,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <title>Resume</title>
 
     <!-- Load the page styles. -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="resume_css/style.css" rel="stylesheet">
+    <link href="resume_css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+
 
 
 
@@ -37,6 +41,33 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 </head>
 
 <body class="container-fluid">
+
+    <div class="intro-container">
+        <!-- responsive navbar -->
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo">JS</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-links">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="nav-links">Projects</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="nav-links">Blog</a>
+                </li>
+                <li>
+                    <a href="contact" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
     <div id="main">
 
         <!--
@@ -146,6 +177,18 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         if (document.getElementById('map') === null) {
             document.getElementById('mapDiv').style.display = 'none';
         }
+
+
+
+  
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+    
+        mainNav.classList.toggle('active');
+        });
+
     </script>
 </body>
 
