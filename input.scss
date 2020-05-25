@@ -1,86 +1,4 @@
-// variables
-
-// SCSS SYNTAX
-// $font-stack:    Helvetica, sans-serif;
-// $primary-color: #333;
-
-// body {
-//   font: 100% $font-stack;
-//   color: $primary-color;
-// }
-
-// nesting
-
-// SCSS SYNTAX
-// nav {
-//   ul {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-//   }
-
-//   li { display: inline-block; }
-
-//   a {
-//     display: block;
-//     padding: 6px 12px;
-//     text-decoration: none;
-//   }
-// }
-
-
-// side nav bar css
-// .sidebar {
-//     margin: 0;
-//     padding: 0;
-//     width: 200px;
-//     background-color: #f1f1f1;
-//     position: fixed;
-//     height: 100%;
-//     overflow: auto;
-
-//     a {
-//         display:block;
-//         color: black;
-//         padding: 16px;
-//         text-decoration: none;
-
-//         &:hover {
-//             background-color: #555;
-//             color: white;
-//         }
-//     }
-
-//     a.active {
-//         background-color: #4CAF50;
-//         color: white;
-//     }
-
-
-// }
-
-// .content {
-//     margin-left: 200px;
-//     padding: 1px 16px;
-//     height: 1000px;
-// }
-
-// @media screen and (max-width: 700px) {
-//     .sidebar {
-//       width: 100%;
-//       height: auto;
-//       position: relative;
-//     }
-//     .sidebar a {float: left;}
-//     div.content {margin-left: 0;}
-//   }
-
-// @media screen and (max-width: 400px) {
-//     .sidebar a {
-//       text-align: center;
-//       float: none;
-//     }
-//   }
+//Index.html CSS 
 
 
 
@@ -371,6 +289,13 @@ body {
         padding: 0;
         color: #000000;
         text-align: center;
+
+            h2 {
+                width: 55%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
             p {
                 display: none;
             }
@@ -445,6 +370,11 @@ body {
         position:relative;
         top:1px;
     }
+
+    .fab {
+        padding: 10px;
+        font-size: 2em;
+    }
 }
 
 
@@ -461,6 +391,7 @@ body {
 .projects {
    text-align: center;
     background-color: #F0F0F0;
+    padding-left: 24px;
 }
 
 
@@ -547,3 +478,77 @@ input[type=submit]:hover {
  .fas  {
      color: white;
  }
+
+
+
+
+
+ // BLOG CSS -----------------------------------------------------------------
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    background: #f1f1f1;
+
+    p {
+        color: #000000;
+    }
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #F0F0F0;
+    color: #000000;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* placeholder image */
+  .row {
+      img {
+        height: 200px;
+        padding-left: 25px;
+        }
+      }
+
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
