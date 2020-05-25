@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- side navbar -->
+<!-- <nav class="sidebar  navbar">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#projects">Projects</a>
+    <a href="#projects">Blog</a>
+</nav> -->
+<div class="intro-container">
+<!-- responsive navbar -->
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo">JS</a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="about.html" class="nav-links">About</a>
+        </li>
+        <li>
+            <a href="gallery.html" class="nav-links">Projects</a>
+        </li>
+        <li>
+            <a href="blog.html" class="nav-links">Blog</a>
+        </li>
+        <li>
+            <a href="contact" class="nav-links">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+    <!-- intro to page -->
+        <h1 class="quote">Dont aspire to make a living. Aspire to make a difference.</h1>
+</div>
+    <!-- about section -->
+    <section class="about"> 
+        <h2>Mission-driven full stack developer with a passion for thoughtful design and collaboration.</h2>
+            <p class="hidden">I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional path has taken many twists and turns — from being a Pastry Chef, Photography, and now software development.
+            As a web developer, I enjoy using my attention to detail, my love for creating things, and my mission-driven work ethic to be successful.</p>
+        <a href="url" class="button">READ MORE</a>
+    </section>
+
+    <!-- projects display -->
+    <section class="projects">
+        <h1 class="title">Projects</h1>
+        <div class="project-gallery">
+            <img src="http://placekitten.com/200/300?image=11" alt="kitten image">
+            <div class="image-caption desktop-hidden">
+                <p>BATTLE WARS</p>
+                <a href="#">VIEW PROJECT</a>
+            </div>
+            <img src="http://placekitten.com/200/300?image=12" alt="kitten image">
+            <div class="image-caption desktop-hidden">
+                <p>BATTLE WARS</p>
+                <a href="#">VIEW PROJECT</a>
+            </div>
+            <img class="hidden" src="http://placekitten.com/200/300?image=09" alt="kitten image">
+            <a href="url" class="button">VIEW PROJECTS</a>
+        </div>
+
+    </section>
+    <!-- skills section -->
+    <section class="skills">
+        <h1 class="title" >Skills</h1>
+        <div class="skills-container">
+            <img src="images/ruby.png" alt="ruby icon">
+            <img src="images/html5.png" alt="html icon">
+            <img src="images/javascript.png" alt="javascript icon">
+            <img src="images/css3.png" alt="css icon">
+            <img src="images/github.png" alt="github icon">
+            <img src="images/sass.png" alt="sass icon">
+            <img src="images/photoshop.png" alt="photoshop icon">
+            <img src="images/bootstrap.png" alt="bootstrap icon">
+        </div>
+
+    </section>
+    <!-- contact form
+    <section class="contact">
+        <form action="action_page.php">
+
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form> -->
+    <section class="projects">
+        <h1 class="title">Blog</h1>
+        <div class="project-gallery">
+            <img src="http://placekitten.com/200/300?image=11" alt="kitten image">
+            <div class="image-caption desktop-hidden">
+                <p>BATTLE WARS</p>
+                <a href="#">VIEW PROJECT</a>
+            </div>
+            <img src="http://placekitten.com/200/300?image=12" alt="kitten image">
+            <div class="image-caption desktop-hidden">
+                <p>BATTLE WARS</p>
+                <a href="#">VIEW PROJECT</a>
+            </div>
+            <img class="hidden" src="http://placekitten.com/200/300?image=09" alt="kitten image">
+            <a href="url" class="button">VIEW PROJECTS</a>
+        </div>
+    </section>
+
+<!-- footer -->
+    <footer class="footer">
+        <div>
+           <a href="https://twitter.com/wandering_Sol3"> <i class="fab fa-twitter"></i></a>
+           <a href="https://github.com/Jese310S"><i class="fab fa-github"></i></a>
+           <a href="https://www.linkedin.com/in/jessica-sole/"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/2wanderingsoles/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+    
+        mainNav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
