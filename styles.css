@@ -190,7 +190,7 @@ body {
     margin: 10px; } }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .active {
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.5); }
 
   .about {
     padding: 0;
@@ -449,5 +449,17 @@ div .desc {
     margin-left: auto;
     margin-bottom: 44px;
     border-top: none; } }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-html {
+    color: #000000;
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 40px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-html {
+    color: #000000;
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 40px; } }
 
 /*# sourceMappingURL=styles.css.map */

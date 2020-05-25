@@ -290,7 +290,7 @@ body {
 
 @media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
     .active{
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.5);
     }
 
     .about {
@@ -721,5 +721,25 @@ body {
         margin-left: auto;
         margin-bottom: 44px;
         border-top: none;
+    }
+}
+
+@media screen and (min-width: $bp-iphone-min) and (max-width: $bp-iphone-max) {
+
+    .about-html {
+        color: #000000;
+        text-align: center;
+        padding-top: 78px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: $bp-ipad-min) and (max-width: $bp-ipad-max) {
+
+    .about-html {
+        color: #000000;
+        text-align: center;
+        padding-top: 78px;
+        padding-bottom: 40px;
     }
 }
