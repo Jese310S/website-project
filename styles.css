@@ -1,7 +1,24 @@
+body, header, section, footer {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif; }
+  body section, header section, section section, footer section {
+    border-top: 2px solid #DCDCDC; }
 
+body {
+  background: #F0F0F0; }
+
+.contact {
+  border: 1px solid #000000;
+  background: #b73aa6;
+  margin-bottom: 20px; }
+
+.footer {
+  border: 1px solid #000000;
+  background: #616161; }
 
 .intro-container {
-  background-color:	#696969 ;
+  background: url("images/hike_small.jpg") no-repeat;
   background-size: 100%;
   margin: 0;
   height: 1080px; }
@@ -42,15 +59,6 @@
 .active {
   display: block; }
 
-  .fas {
-    color:white;
-  }
-
-    .navbar {
-      height: inherit;
-    }
-
-/* 
 @media screen and (min-width: 1024px) {
   .intro-container h1 {
     text-align: center;
@@ -61,7 +69,11 @@
     text-align: center;
     color: #000000;
     padding: 100px;
-    background-color: #F0F8FF; }
+    background-color: #F0F8FF;
+    font-size: 25px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
 
   .navbar {
     display: flex;
@@ -108,7 +120,7 @@
     cursor: pointer;
     color: #14396a;
     font-family: Arial;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
@@ -178,7 +190,7 @@
     margin: 10px; } }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .active {
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.5); }
 
   .about {
     padding: 0;
@@ -293,17 +305,8 @@ body {
   body p {
     color: #000000; }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .leftcolumn {
-  float: left;
   width: 75%; }
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px; }
 
 /* Add a card effect for articles */
 .card {
@@ -341,11 +344,12 @@ body {
     font-size: 20px; } }
 @media screen and (min-width: 1024px) {
   .leftcolumn {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    PADDING-TOP: 50px;
-    margin-bottom: 100px; }
+    padding-top: 50px;
+    margin-bottom: 100px;
+    font-size: 25px; }
 
   .card {
     width: 50%;
@@ -415,10 +419,10 @@ div .desc {
     clear: both; }
 
   .intro-container {
-    height: 200px; }
+    height: 1300px; }
 
   .nav-links {
-    font-size: 20px; }
+    font-size: 2em; }
 
   .gallery-title {
     font-size: 3em; }
@@ -433,7 +437,7 @@ div .desc {
   .gallery {
     margin-bottom: 40px; } }
 @media screen and (min-width: 1024px) {
-  .about {
+  .about-html {
     margin-top: 44px;
     text-align: center;
     color: #000000;
@@ -445,5 +449,17 @@ div .desc {
     margin-left: auto;
     margin-bottom: 44px;
     border-top: none; } }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-html {
+    color: #000000;
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 40px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-html {
+    color: #000000;
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 40px; } }
 
-/* # sourceMappingURL=styles.css.map */ 
+/*# sourceMappingURL=styles.css.map */
